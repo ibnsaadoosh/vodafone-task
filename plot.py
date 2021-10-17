@@ -35,7 +35,7 @@ def affiliate_channel_percentage():
     plt.close()
     return bytes_image
 
-def test():
+def provider():
     df = pd.read_csv('train_users_2.csv')
     x= df["affiliate_provider"].value_counts()
     x_percent = [num/np.sum(x.values) for num in x.values]
